@@ -44,7 +44,7 @@ class BuildsActivity : AppCompatActivity() {
 
     private fun backBtnToHome() {
         var backBtnToHome: Button = findViewById(R.id.backBtnToHome)
-        backBtnToHome.setOnClickListener { onBackPressed() }
+        backBtnToHome.setOnClickListener { finish() }
     }
 
     private fun webView() {
@@ -117,11 +117,11 @@ class BuildsActivity : AppCompatActivity() {
         super.onPause()
     }
 
-    override fun onBackPressed() {
-        var i = Intent(this, DrawerActivity::class.java)
-        startActivity(i)
-        super.onBackPressed()
-    }
+//    override fun onBackPressed() {
+//        var i = Intent(this, DrawerActivity::class.java)
+//        startActivity(i)
+//        super.onBackPressed()
+//    }
 
     override fun onDestroy() {
         mp?.release()

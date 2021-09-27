@@ -525,14 +525,14 @@ class DataBaseActivity : AppCompatActivity() {
 
     private fun backBtnToHome() {
         var backBtnToHome: Button = findViewById(R.id.backBtnToHome2)
-        backBtnToHome.setOnClickListener { onBackPressed() }
+        backBtnToHome.setOnClickListener { finish() }
     }
 
-    override fun onBackPressed() {
-        var i = Intent(this, DrawerActivity::class.java)
-        startActivity(i)
-        super.onBackPressed()
-    }
+//    override fun onBackPressed() {
+//        var i = Intent(this, DrawerActivity::class.java)
+//        startActivity(i)
+//        super.onBackPressed()
+//    }
 
     override fun onDestroy() {
         mp?.release()

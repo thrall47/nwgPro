@@ -253,7 +253,6 @@ class DrawerActivity : AppCompatActivity() {
     }
 
     override fun onPause() {
-        finish()
         super.onPause()
     }
 

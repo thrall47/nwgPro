@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/kotlin course/ideas/new world/NewWorldMMORPGUGuidePro/app/src/main/res/drawable/btn_new_shape.xml" value="0.36153846153846153" />
+        <entry key="..\:/kotlin course/ideas/new world/NewWorldMMORPGUGuidePro/app/src/main/res/drawable/ic_baseline_music_off_24.xml" value="0.36153846153846153" />
+        <entry key="..\:/kotlin course/ideas/new world/NewWorldMMORPGUGuidePro/app/src/main/res/drawable/mute_on.xml" value="0.36153846153846153" />
         <entry key="..\:/kotlin course/ideas/new world/NewWorldMMORPGUGuidePro/app/src/main/res/layout/activity_about.xml" value="0.35104166666666664" />
+        <entry key="..\:/kotlin course/ideas/new world/NewWorldMMORPGUGuidePro/app/src/main/res/layout/activity_builds.xml" value="0.35104166666666664" />
         <entry key="..\:/kotlin course/ideas/new world/NewWorldMMORPGUGuidePro/app/src/main/res/layout/activity_data_base.xml" value="0.34564102564102567" />
         <entry key="..\:/kotlin course/ideas/new world/NewWorldMMORPGUGuidePro/app/src/main/res/layout/activity_drawer.xml" value="0.35104166666666664" />
         <entry key="..\:/kotlin course/ideas/new world/NewWorldMMORPGUGuidePro/app/src/main/res/layout/activity_map.xml" value="0.35104166666666664" />

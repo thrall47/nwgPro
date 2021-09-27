@@ -40,7 +40,7 @@ class MapActivity : AppCompatActivity() {
 
     private fun backBtnToHome() {
         var backBtnToHome: Button = findViewById(R.id.backBtnToHome3)
-        backBtnToHome.setOnClickListener { onBackPressed() }
+        backBtnToHome.setOnClickListener { finish() }
     }
 
     private fun webView() {
@@ -101,11 +101,11 @@ class MapActivity : AppCompatActivity() {
         super.onPause()
     }
 
-    override fun onBackPressed() {
-        var i = Intent(this, DrawerActivity::class.java)
-        startActivity(i)
-        super.onBackPressed()
-    }
+//    override fun onBackPressed() {
+//        var i = Intent(this, DrawerActivity::class.java)
+//        startActivity(i)
+//        super.onBackPressed()
+//    }
 
     override fun onDestroy() {
         mp?.release()
