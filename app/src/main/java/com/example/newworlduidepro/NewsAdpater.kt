@@ -68,11 +68,9 @@ class NewsAdpater(val activity: Activity, val articles: List<Article>?)
                         val intent = Intent(Intent.ACTION_VIEW, link)
                         activity.startActivity(intent)
                     }
-                }
-                else{
-                    holder.itemView.visibility = View.GONE
-                    holder.itemView.layoutParams = RecyclerView.LayoutParams(0, 0)
-                }
+                }else{holder.itemView.visibility = View.GONE
+                    holder.itemView.layoutParams = RecyclerView.LayoutParams(0, 0)}
+
 
             "FR" ->
                 if(language == "FR"){

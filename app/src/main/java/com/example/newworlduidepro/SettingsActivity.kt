@@ -86,7 +86,7 @@ class SettingsActivity : AppCompatActivity() {
                 changeSource("website-news")
                 back.setOnClickListener {
                     back.startAnimation(AnimationUtils.loadAnimation(this, R.anim.bounce))
-                    startActivityForResult(i, 1) }
+                    onBackPressed() }
             }
             if (checkedId == R.id.Twitter) {
                 var i = Intent(this, DrawerActivity::class.java)
@@ -94,7 +94,7 @@ class SettingsActivity : AppCompatActivity() {
                 changeSource("twitter")
                 back.setOnClickListener {
                     back.startAnimation(AnimationUtils.loadAnimation(this, R.anim.bounce))
-                    startActivityForResult(i, 2) }
+                    onBackPressed() }
             }
             if (checkedId == R.id.Reddit) {
                 var i = Intent(this, DrawerActivity::class.java)
@@ -102,7 +102,7 @@ class SettingsActivity : AppCompatActivity() {
                 changeSource("reddit")
                 back.setOnClickListener {
                     back.startAnimation(AnimationUtils.loadAnimation(this, R.anim.bounce))
-                    startActivityForResult(i, 3) }
+                    onBackPressed() }
             }
 
         }
@@ -143,11 +143,11 @@ class SettingsActivity : AppCompatActivity() {
         super.onPause()
     }
 
-    override fun onBackPressed() {
-        var i = Intent(this, DrawerActivity::class.java)
-        startActivity(i)
-        super.onBackPressed()
-    }
+//    override fun onBackPressed() {
+//        var i = Intent(this, DrawerActivity::class.java)
+//        startActivity(i)
+//        super.onBackPressed()
+//    }
 
 
 

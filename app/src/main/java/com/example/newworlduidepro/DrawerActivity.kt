@@ -159,15 +159,15 @@ class DrawerActivity : AppCompatActivity() {
         val adapter = NewsAdpater(this, articles)
         rv.adapter = adapter
 
-        rv.addOnScrollListener(object : RecyclerView.OnScrollListener() {
-            override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
-                val lastVisibleItemPosition: Int = manager.findLastVisibleItemPosition()
-                val totalItemCount = recyclerView!!.layoutManager?.itemCount
-                super.onScrolled(recyclerView, dx, dy)
-                if (lastVisibleItemPosition == totalItemCount){
-
-                }
-            }
+//        rv.addOnScrollListener(object : RecyclerView.OnScrollListener() {
+//            override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+//                val lastVisibleItemPosition: Int = manager.findLastVisibleItemPosition()
+//                val totalItemCount = recyclerView!!.layoutManager?.itemCount
+//                super.onScrolled(recyclerView, dx, dy)
+//                if (lastVisibleItemPosition == totalItemCount){
+//
+//                }
+//            }
 //            override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
 //                super.onScrollStateChanged(recyclerView, newState)
 //                val totalItemCount = recyclerView!!.layoutManager?.itemCount
@@ -176,7 +176,7 @@ class DrawerActivity : AppCompatActivity() {
 //
 //                }
 //            }
-        })
+//        })
 //        if (manager.findFirstCompletelyVisibleItemPosition() == 0){
 //
 //        }
@@ -247,12 +247,13 @@ class DrawerActivity : AppCompatActivity() {
     }
 
     override fun onResume() {
-        mp?.pause()
         mp?.start()
+        loadNews()
         super.onResume()
     }
 
     override fun onPause() {
+        mp?.pause()
         super.onPause()
     }
 
